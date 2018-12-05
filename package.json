@@ -1,0 +1,29 @@
+{
+  "name": "qadb",
+  "version": "1.0.0",
+  "description": "A Question-Answer database API",
+  "main": "index.js",
+  "dependencies": {
+    "express-generator": "^4.16.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarakStout/QADB.git"
+  },
+  "keywords": [
+    "Node.js",
+    "MySQL",
+    "QA"
+  ],
+  "author": "Barak Stout",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarakStout/QADB/issues"
+  },
+  "homepage": "https://github.com/BarakStout/QADB#readme"
+}
