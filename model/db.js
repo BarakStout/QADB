@@ -4,7 +4,7 @@ var mysql = require('mysql');
 
 //local mysql db connection
 var connection = mysql.createConnection({
-    host     : '192.168.117.129',
+    host     : 'localhost',
     user     : 'root',
     password : '1234',
     database : 'QADB_DB',
