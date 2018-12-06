@@ -26,7 +26,7 @@ Question.createQuestion = function createUser(newQA, result) {
 
 Question.getAllQuestions = function getAllQuestions(result) {
         console.log('getting all quesitons from db....');
-        var sqlcmd = "SELECT * FROM Questions";
+        var sqlcmd = "SELECT * FROM `Questions`";
         console.log(sqlcmd);
         sql.query(sqlcmd, function (err, res) {
 
