@@ -1,12 +1,22 @@
 'use strict';
 module.exports = function(app) {
-  var todoList = require('../controller/appController.js');
+  var qa = require('../controller/appController.js');
 
-  // todoList Routes
+  // Routes
   app.route('/questions')
-    .get(todoList.list_all_questions)
-    .post(todoList.create_a_question);
+    .get(qa.list_all_questions);
 
+  app.route('/question/:id')
+    .get(qa.get_a_question);
+
+  app.route('/random_question')
+    .get(qa.get_random_question);
+
+  app.route('/create_question/:info')
+    .post(qa.create_a_question);
+
+  app.route('/update_question/:info')
+    .put(qa.update_question);
 //   app.route('/tasks/:taskId')
 //    .get(todoList.get_a_question)
 //    .put(todoList.update_a_question)
