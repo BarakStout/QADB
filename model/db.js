@@ -8,7 +8,6 @@ var connection = mysql.createConnection({
     user     : 'root',
     password : '1234',
     database : 'QADB_DB',
-    port: 80
 });
 
 function handleDisconnect(){
